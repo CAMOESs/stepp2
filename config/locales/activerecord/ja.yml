@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      task: タスク
+    attriburtes:
+      title: タイトル
+  global:
+    menu:
+      home: "タスク一覧"
+      link: "タスクを登録する"
