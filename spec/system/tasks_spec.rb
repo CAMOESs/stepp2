@@ -135,13 +135,6 @@ RSpec.describe 'タスク管理機能', type: :system do
          end
        end
    
-       context '新たにタスクを作成した場合' do
-         it '新しいタスクが一番上に表示される' do
-           # task = FactoryBot.create(:task, title: 'task')
-           # visit tasks_path
-           # omit
-         end
-       end
      end
 
 end
