@@ -19,14 +19,15 @@
       <tr>
         <td><%= task.title %></td>
         <td><%= task.content %></td>
-        <td><%= task.created_at %></td>
+        <td class = "XPath"><%= l(task.created_at, format: :long) %></td>
         <td> <a class="btn btn-primary show-task"  href="<%= task_path(task.id) %>"><%= t("listTask.el.show") %></a></td>
         <td> <a class="btn btn-success edit-task"  href="<%= edit_task_path(task.id) %>"><%= t("listTask.el.edit")%></a></td>
         <td> <a class="btn btn-danger destroy-task"  href="<%= task_path(task.id) %>" data-confirm= <%= t("listTask.el.confirm") %> data-method="delete"><%= t("listTask.el.destroy")%></a></td>
-      </tr>
+        </tr>
+      
     <% end %>
   </tbody>
 </table>
     </div>
-    
+    <%= paginate @tasks %>
 </div>
